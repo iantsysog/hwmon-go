@@ -150,6 +150,9 @@ func (c *AppleConnection) getKeyInfo(key string) (C.SMCKeyData_keyInfo_t, error)
 	}
 
 	c.cacheMu.Lock()
+	if c.cache == nil {
+		c.cache = make(map[string]C.SMCKeyData_keyInfo_t)
+	}
 	c.cache[key] = keyInfo
 	c.cacheMu.Unlock()
 

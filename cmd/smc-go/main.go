@@ -67,6 +67,9 @@ func run(opts options, c smc.Connection, out io.Writer) error {
 func main() {
 	opts, err := parseArgs(os.Args[1:])
 	if err != nil {
+		if err == flag.ErrHelp {
+			os.Exit(0)
+		}
 		log.Fatal(err)
 	}
 	if err := run(opts, smc.New(), log.Writer()); err != nil {
