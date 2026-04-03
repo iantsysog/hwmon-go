@@ -1,18 +1,20 @@
 GO ?= go
 BINDIR ?= bin
-BIN ?= $(BINDIR)/smc-go
 
-.PHONY: all build clean
+TAGS ?= smc hid eventsystem iohid
+CGO_ENABLED ?= 1
 
-all: build
+.PHONY: build test
 
-build: $(BIN)
+HWMON_BIN := $(BINDIR)/hwmon-go
 
-$(BIN): | $(BINDIR)
-	$(GO) build -trimpath -ldflags="-s -w" -o $@ ./cmd/smc-go
+build: $(HWMON_BIN)
+
+$(HWMON_BIN): | $(BINDIR)
+	CGO_ENABLED=$(CGO_ENABLED) $(GO) build -trimpath -tags="$(TAGS)" -ldflags="-s -w" -o $@ ./cmd/hwmon-go
 
 $(BINDIR):
 	mkdir -p $@
 
-clean:
-	rm -f $(BIN)
+test:
+	CGO_ENABLED=$(CGO_ENABLED) $(GO) test -tags="$(TAGS)" ./...

@@ -1,0 +1,726 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "key": "BNum",
+      "name": "Battery Count",
+      "kind": "battery",
+      "unit": "",
+      "dataTypeHint": ""
+    },
+    {
+      "key": "BSIn",
+      "name": "Battery Info",
+      "kind": "battery",
+      "unit": "",
+      "dataTypeHint": ""
+    },
+    {
+      "key": "BATP",
+      "name": "Battery Power",
+      "kind": "battery",
+      "unit": "",
+      "dataTypeHint": ""
+    },
+    {
+      "key": "IDBR",
+      "name": "Brightness",
+      "kind": "current",
+      "unit": "A",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "IPBR",
+      "name": "Charger BMON",
+      "kind": "current",
+      "unit": "A",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "ID0R",
+      "name": "Mainboard S0 Rail (DC In)",
+      "kind": "current",
+      "unit": "A",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "ibuck0",
+      "name": "PMU ibuck0",
+      "kind": "current",
+      "unit": "A",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "ibuck1",
+      "name": "PMU ibuck1",
+      "kind": "current",
+      "unit": "A",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "ibuck11",
+      "name": "PMU ibuck11",
+      "kind": "current",
+      "unit": "A",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "ibuck13",
+      "name": "PMU ibuck13",
+      "kind": "current",
+      "unit": "A",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "ibuck2",
+      "name": "PMU ibuck2",
+      "kind": "current",
+      "unit": "A",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "ibuck4",
+      "name": "PMU ibuck4",
+      "kind": "current",
+      "unit": "A",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "ibuck7",
+      "name": "PMU ibuck7",
+      "kind": "current",
+      "unit": "A",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "ibuck9",
+      "name": "PMU ibuck9",
+      "kind": "current",
+      "unit": "A",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "ildo1",
+      "name": "PMU ildo1",
+      "kind": "current",
+      "unit": "A",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "ildo5",
+      "name": "PMU ildo5",
+      "kind": "current",
+      "unit": "A",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "F0Mx",
+      "name": "Fan 1 Maximum Speed",
+      "kind": "fan",
+      "unit": "rpm",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "F0Mn",
+      "name": "Fan 1 Minimal Speed",
+      "kind": "fan",
+      "unit": "rpm",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "F1Mx",
+      "name": "Fan 2 Maximum Speed",
+      "kind": "fan",
+      "unit": "rpm",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "F1Mn",
+      "name": "Fan 2 Minimal Speed",
+      "kind": "fan",
+      "unit": "rpm",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "FNum",
+      "name": "Fan Count",
+      "kind": "fan",
+      "unit": "",
+      "dataTypeHint": "ui8"
+    },
+    {
+      "key": "PPBR",
+      "name": "Battery",
+      "kind": "power",
+      "unit": "W",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "PDTR",
+      "name": "DC In",
+      "kind": "power",
+      "unit": "W",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "PHPC",
+      "name": "Heatpipe",
+      "kind": "power",
+      "unit": "W",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "PDBR",
+      "name": "Power Delivery Brightness",
+      "kind": "power",
+      "unit": "W",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "PSTR",
+      "name": "System Total",
+      "kind": "power",
+      "unit": "W",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "TaLP",
+      "name": "Airflow Left",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "TaRF",
+      "name": "Airflow Right",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "TW0P",
+      "name": "Airport 1",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "TB0T",
+      "name": "Battery 1",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "TB1T",
+      "name": "Battery 2",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "TB2T",
+      "name": "Battery 3",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Te05",
+      "name": "CPU Efficiency Core 1",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Te0S",
+      "name": "CPU Efficiency Core 2",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tp01",
+      "name": "CPU Performance Core 1",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tp05",
+      "name": "CPU Performance Core 2",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tp09",
+      "name": "CPU Performance Core 3",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tp0D",
+      "name": "CPU Performance Core 4",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tp0Y",
+      "name": "CPU Performance Core 6",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tp0b",
+      "name": "CPU Performance Core 7",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tp0e",
+      "name": "CPU Performance Core 8",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tg1U",
+      "name": "GPU 1",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tg1k",
+      "name": "GPU 2",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tg0K",
+      "name": "GPU 3",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tg0L",
+      "name": "GPU 4",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tg0d",
+      "name": "GPU 5",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tg0e",
+      "name": "GPU 6",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tg0j",
+      "name": "GPU 7",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tg0k",
+      "name": "GPU 8",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "TG0H",
+      "name": "GPU Heatsink 1",
+      "kind": "temp",
+      "unit": "",
+      "dataTypeHint": "ioft"
+    },
+    {
+      "key": "TH0x",
+      "name": "NAND",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "temp",
+      "name": "NAND CH0 temp",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "TH0a",
+      "name": "NVME 1 (A)",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "TH0b",
+      "name": "NVME 1 (B)",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Te0T",
+      "name": "PCIe Slot 1 Bottom",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Te0S",
+      "name": "PCIe Slot 1 Side",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "tcal",
+      "name": "PMU tcal",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdev1",
+      "name": "PMU tdev1",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdev2",
+      "name": "PMU tdev2",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdev3",
+      "name": "PMU tdev3",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdev4",
+      "name": "PMU tdev4",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdev5",
+      "name": "PMU tdev5",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdev6",
+      "name": "PMU tdev6",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdev7",
+      "name": "PMU tdev7",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdev8",
+      "name": "PMU tdev8",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdie1",
+      "name": "PMU tdie1",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdie10",
+      "name": "PMU tdie10",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdie11",
+      "name": "PMU tdie11",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdie12",
+      "name": "PMU tdie12",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdie13",
+      "name": "PMU tdie13",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdie14",
+      "name": "PMU tdie14",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdie2",
+      "name": "PMU tdie2",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdie3",
+      "name": "PMU tdie3",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdie4",
+      "name": "PMU tdie4",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdie5",
+      "name": "PMU tdie5",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdie6",
+      "name": "PMU tdie6",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdie7",
+      "name": "PMU tdie7",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdie8",
+      "name": "PMU tdie8",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "tdie9",
+      "name": "PMU tdie9",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "Tp0C",
+      "name": "Power Supply 1",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tp2C",
+      "name": "Power Supply 3",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tp0D",
+      "name": "Power Supply Diode 1",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tp2D",
+      "name": "Power Supply Diode 3",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "Tp0P",
+      "name": "Power Supply Proximity 1",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "TaLT",
+      "name": "Thunderbolt Left Proximity",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "TaRT",
+      "name": "Thunderbolt Right Proximity",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "battery",
+      "name": "gas gauge battery",
+      "kind": "temp",
+      "unit": "°C",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "VP0R",
+      "name": "12V Rail",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "VD0R",
+      "name": "DC In",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "flt"
+    },
+    {
+      "key": "vbuck0",
+      "name": "PMU vbuck0",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "vbuck1",
+      "name": "PMU vbuck1",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "vbuck11",
+      "name": "PMU vbuck11",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "vbuck13",
+      "name": "PMU vbuck13",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "vbuck2",
+      "name": "PMU vbuck2",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "vbuck3",
+      "name": "PMU vbuck3",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "vbuck4",
+      "name": "PMU vbuck4",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "vbuck7",
+      "name": "PMU vbuck7",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "vbuck9",
+      "name": "PMU vbuck9",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "vldo1",
+      "name": "PMU vldo1",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "vldo10",
+      "name": "PMU vldo10",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "vldo5",
+      "name": "PMU vldo5",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "vldo7",
+      "name": "PMU vldo7",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "hid"
+    },
+    {
+      "key": "vldo9",
+      "name": "PMU vldo9",
+      "kind": "voltage",
+      "unit": "V",
+      "dataTypeHint": "hid"
+    }
+  ]
+}

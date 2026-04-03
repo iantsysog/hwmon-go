@@ -1,4 +1,4 @@
-# smc-go
+# hwmon-go
 
 ## Disclaimer
 
@@ -9,11 +9,12 @@ This project is provided solely for the author's personal use. You may clone or 
 ## Credits
 
 - [charlie0129/gosmc](https://github.com/charlie0129/gosmc) (GPL-2.0)
+- [dkorunic/iSMC](https://github.com/dkorunic/iSMC) (GPL-3.0)
 
 ## License
 
 1. This project is distributed under the [AGPL-3.0](LICENSE) license. All derivative works shall be subject to the same license.
-2. This project references code licensed under GPL-2.0. Use of such referenced code is governed by the terms of the respective license under which it is made available.
+2. This project references code licensed under GPL-2.0 or GPL-3.0. Use of such referenced code is governed by the terms of the respective license under which it is made available.
 3. The submission, inclusion, or listing of this project in lists, collections, rankings, or analogous compilations is expressly prohibited without the prior written consent of the author.
 
 ```md
