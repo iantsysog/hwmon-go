@@ -31,27 +31,32 @@ func New() Connection {
 }
 
 func (c *AppleConnection) Open() error {
-	if c.opened.Swap(true) {
+	c.connMu.Lock()
+	defer c.connMu.Unlock()
+
+	if c.opened.Load() {
 		return nil
 	}
 	if ret := int(C.SMCOpen(&c.conn)); ret != 0 {
-		c.opened.Store(false)
+		c.conn = 0
 		return &SMCError{Op: "open connection", Code: ret}
 	}
+	c.opened.Store(true)
 	return nil
 }
 
 func (c *AppleConnection) Close() error {
-	if !c.opened.Swap(false) {
-		return nil
-	}
-
 	c.connMu.Lock()
 	defer c.connMu.Unlock()
+
+	if !c.opened.Load() {
+		return nil
+	}
 
 	if ret := int(C.SMCClose(c.conn)); ret != 0 {
 		return &SMCError{Op: "close connection", Code: ret}
 	}
+	c.opened.Store(false)
 	c.cacheMu.Lock()
 	clear(c.cache)
 	c.cacheMu.Unlock()

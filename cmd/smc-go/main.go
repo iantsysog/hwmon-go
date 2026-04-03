@@ -33,11 +33,15 @@ func parseArgs(args []string) (options, error) {
 	return opts, nil
 }
 
-func run(opts options, c smc.Connection, out io.Writer) error {
+func run(opts options, c smc.Connection, out io.Writer) (err error) {
 	if err := c.Open(); err != nil {
 		return err
 	}
-	defer c.Close()
+	defer func() {
+		if closeErr := c.Close(); err == nil && closeErr != nil {
+			err = closeErr
+		}
+	}()
 
 	if opts.valueHex == "" {
 		v, err := c.Read(opts.key)
