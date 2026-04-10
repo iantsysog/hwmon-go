@@ -18,11 +18,12 @@ const (
 type collectorConfig struct {
 	registry Registry
 
-	enabledNames  map[string]struct{}
-	extraBackends []Backend
+	enabledNames map[string]struct{}
 
 	filter func(Reading) bool
 	less   func(a, b Reading) bool
+
+	extraBackends []Backend
 
 	errorPolicy ErrorPolicy
 }

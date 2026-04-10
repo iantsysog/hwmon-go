@@ -5,6 +5,6 @@ type Reading struct {
 	Name    string
 	Unit    string
 	Source  string
-	Value   float64
 	KeyOrID string
+	Value   float64
 }

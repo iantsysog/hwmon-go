@@ -21,8 +21,8 @@ func (e ErrInvalidLength) Error() string {
 }
 
 type ErrOutOfRange struct {
-	DataType string
 	Value    any
+	DataType string
 }
 
 func (e ErrOutOfRange) Error() string {
@@ -30,8 +30,8 @@ func (e ErrOutOfRange) Error() string {
 }
 
 type ErrUnsupportedValueType struct {
-	DataType string
 	Value    any
+	DataType string
 }
 
 func (e ErrUnsupportedValueType) Error() string {

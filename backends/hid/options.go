@@ -1,9 +1,6 @@
 package hid
 
-import "github.com/iantsysog/hwmon-go/internal/hid/source"
-
 type config struct {
-	src              source.Source
 	emitUnclassified bool
 }
 

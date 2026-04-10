@@ -9,10 +9,10 @@ import (
 )
 
 type Value struct {
+	Decoded  any
 	Key      string
 	DataType string
 	Raw      []byte
-	Decoded  any
 }
 
 type Decoder func(raw []byte) (any, error)

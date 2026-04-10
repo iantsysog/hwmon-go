@@ -13,7 +13,7 @@ func TestSMC(t *testing.T) {
 	if err := c.Open(); err != nil {
 		t.Skipf("SMC open failed: %v", err)
 	}
-	defer c.Close()
+	defer func() { _ = c.Close() }()
 
 	if err := c.Write("CH0B", []byte{0x0}); err != nil {
 		t.Skipf("SMC write failed: %v", err)

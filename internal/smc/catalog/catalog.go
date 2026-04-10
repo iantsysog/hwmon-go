@@ -17,8 +17,8 @@ type Entry struct {
 }
 
 type fileFormat struct {
-	Version int     `json:"version"`
 	Entries []Entry `json:"entries"`
+	Version int     `json:"version"`
 }
 
 type Catalog struct {

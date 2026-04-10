@@ -7,8 +7,8 @@ type Registry interface {
 }
 
 type registry struct {
-	mu       sync.RWMutex
 	backends []Backend
+	mu       sync.RWMutex
 }
 
 func (r *registry) List() []Backend {

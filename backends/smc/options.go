@@ -1,18 +1,11 @@
 package smc
 
-import (
-	"slices"
-
-	"github.com/iantsysog/hwmon-go/internal/smc/catalog"
-	"github.com/iantsysog/hwmon-go/internal/smc/conn"
-)
+import "slices"
 
 type config struct {
 	keys          []string
 	useCatalog    bool
 	emitUndecoded bool
-	conn          conn.Connection
-	cat           *catalog.Catalog
 }
 
 type Option func(*config)

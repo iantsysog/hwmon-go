@@ -3,9 +3,9 @@ package model
 import "strings"
 
 type ElementMeta struct {
+	Name      string
 	UsagePage uint32
 	Usage     uint32
-	Name      string
 }
 
 type usageKey uint64

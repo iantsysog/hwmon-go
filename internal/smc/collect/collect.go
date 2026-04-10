@@ -39,7 +39,7 @@ func Run(ctx context.Context, c conn.Connection, kp keys.Provider, mr meta.Resol
 	if err := c.Open(); err != nil {
 		return err
 	}
-	defer c.Close()
+	defer func() { _ = c.Close() }()
 
 	for _, key := range ks {
 		if err := ctx.Err(); err != nil {
